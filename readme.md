@@ -1,6 +1,8 @@
 # Vanilla JavaScript App
 
 This repo is used as a starter for a _very basic_ HTML web application using no front-end frameworks.
+This code sample is from https://docs.microsoft.com/en-us/azure/static-web-apps/getting-started?tabs=vanilla-javascript
+
 
 # VS.CODE and Github desktop integration
 
