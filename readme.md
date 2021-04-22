@@ -9,7 +9,7 @@ This code sample is from https://docs.microsoft.com/en-us/azure/static-web-apps/
 USE GITHUB Desktop to launch VS.CODE and to update Github
 
 	1) Create REPO in Github
-	2) Use desktop to pull a repo
+	2) Use desktop to clone a repo from github URL
 	3) Use desktop tool to open in VS.CODE
 	4) Make changes  in VS.CODE then
 	5) Save & close VS.code
