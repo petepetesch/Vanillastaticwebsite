@@ -13,10 +13,7 @@
     <h1>Vanilla JavaScript App Pedro test v3.0 progress is coming!</h1>
     <p></p>
     <p></p>
-    <h2>Make a table based on JSON data.</h2>
-    <p></p>
-
-    <h1> Pete's Static Table of Numbers</h1>
+    <h2> Pete's Static Table of Numbers</h1>
  <table border=0>
      <tr><td style='width: 100px; color: red;'>  Petes Column 1 Text </td><td style='width: 100px; color: red; text-align: right;'> Petes Column 2 Text </td><td style='width: 100px; color: red; text-align: right;'> Petes Column 3 Text  </td></tr>
      <tr><td style='width: 100px;'>---------------</td><td style='width: 100px; text-align: right;'>---------------</td><td style='width: 100px; text-align: right;'>---------------</td></tr>
@@ -29,6 +26,42 @@
      <tr> <td style='width: 100px;'>Number 6 is:</td><td style='width: 100px; text-align: right;'>7770.000</td><td style='width: 100px; text-align: right;'>7770.000</td></tr>
      <tr><td style='width: 100px;'>Number 7 is:</td><td style='width: 100px; text-align: right;'>88888.000</td><td style='width: 100px; text-align: right;'>88888.000</td></tr>
  </table>
+
+ <h2>Dynamic Table of Numbers</h2>
+
+ <table border="0">
+     <script language="javascript" type="text/javascript">
+         <!--
+
+         var myArray = new Array();
+         myArray[0] = 1;
+         myArray[1] = 2.218;
+         myArray[2] = 33;
+         myArray[3] = 114.94;
+         myArray[4] = 5;
+         myArray[5] = 33;
+         myArray[6] = 114.980;
+         myArray[7] = 5;
+
+         document.write("<tr><td style='width: 100px; color: red;'>Col Head 1</td>");
+         document.write("<td style='width: 100px; color: red; text-align: right;'>Col Head 2</td>");
+         document.write("<td style='width: 100px; color: red; text-align: right;'>Col Head 3</td></tr>");
+
+         document.write("<tr><td style='width: 100px;'>---------------</td>");
+         document.write("<td style='width: 100px; text-align: right;'>---------------</td>");
+         document.write("<td style='width: 100px; text-align: right;'>---------------</td></tr>");
+
+         for (var i = 0; i < 8; i++) {
+             document.write("<tr><td style='width: 100px;'>Number " + i + " is:</td>");
+             myArray[i] = myArray[i].toFixed(3);
+             document.write("<td style='width: 100px; text-align: right;'>" + myArray[i] + "</td>");
+             document.write("<td style='width: 100px; text-align: right;'>" + myArray[i] + "</td></tr>");
+         }
+
+          //-->
+     </script>
+ </table>
+ <h2>Make a table based on JSON data.</h2>
   <p id="demo"></p>
 
 <script>
