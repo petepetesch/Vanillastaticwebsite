@@ -43,9 +43,9 @@
          myArray[6] = 114.980;
          myArray[7] = 5;
 
-         document.write("<tr><td style='width: 100px; color: red;'>Col Head 1</td>");
-         document.write("<td style='width: 100px; color: red; text-align: right;'>Col Head 2</td>");
-         document.write("<td style='width: 100px; color: red; text-align: right;'>Col Head 3</td></tr>");
+         document.write("<tr><td style='width: 100px; color: red;'>Column 1</td>");
+         document.write("<td style='width: 100px; color: red; text-align: right;'>Column 2</td>");
+         document.write("<td style='width: 100px; color: red; text-align: right;'>Column 2*2</td></tr>");
 
          document.write("<tr><td style='width: 100px;'>---------------</td>");
          document.write("<td style='width: 100px; text-align: right;'>---------------</td>");
@@ -55,7 +55,7 @@
              document.write("<tr><td style='width: 100px;'>Number " + i + " is:</td>");
              myArray[i] = myArray[i].toFixed(3);
              document.write("<td style='width: 100px; text-align: right;'>" + myArray[i] + "</td>");
-             document.write("<td style='width: 100px; text-align: right;'>" + myArray[i] + "</td></tr>");
+             document.write("<td style='width: 100px; text-align: right;'>" + 2*myArray[i] + "</td></tr>");
          }
 
           //-->
