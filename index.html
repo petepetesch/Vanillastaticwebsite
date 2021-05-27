@@ -31,8 +31,6 @@
 
  <table border="0">
      <script language="javascript" type="text/javascript">
-         <!--
-
          var myArray = new Array();
          myArray[0] = 1;
          myArray[1] = 2.218;
@@ -61,37 +59,42 @@
           //-->
      </script>
  </table>
+
  <h2>Make a table based on JSON data.</h2>
 
  
  <table border="0">
   <script language="javascript" type="text/javascript">
-      <!--
+     
+      var rollnumber = 20;
+      var dicearray = new Array();
+      var randnumbervar = 10* Math.random();
+      randnumbervar = (Math.floor(randnumbervar)%6)+1;
+      var someTextString;
+     //generate n random numbers
+              for (i = 0; i < rollnumber;i++)
+                    {
+                          dicearray[i] = randnumbervar;
 
-      var myArray = new Array();
-      myArray[0] = 1;
-      myArray[1] = 2.218;
-      myArray[2] = 33;
-      myArray[3] = 114.94;
-      myArray[4] = 5;
-      myArray[5] = 33;
-      myArray[6] = 114.980;
-      myArray[7] = 5;
+                          // troubleshooting alert 
+                          // someTextString = "Petes Dice roll i is   " + i+ "      random number in array  is        " + dicearray[i];
+                          //alert(someTextString);
+                          // add the random number in loop                            
+                          //generate a new random number
+                          
+                          randnumbervar = 10* Math.random();
+                          randnumbervar = (Math.floor(randnumbervar)%6)+1;
+                                  }
 
-      document.write("<tr><td style='width: 100px; color: red;'>Column 1</td>");
-      document.write("<td style='width: 100px; color: red; text-align: right;'>Column 2</td>");
-      document.write("<td style='width: 100px; color: red; text-align: right;'>Column 2*2</td></tr>");
 
-      document.write("<tr><td style='width: 100px;'>---------------</td>");
-      document.write("<td style='width: 100px; text-align: right;'>---------------</td>");
-      document.write("<td style='width: 100px; text-align: right;'>---------------</td></tr>");
+    
 
-      for (var i = 0; i < 8; i++) {
-          document.write("<tr><td style='width: 100px;'>Number " + i + " is:</td>");
-          myArray[i] = myArray[i].toFixed(3);
-          document.write("<td style='width: 100px; text-align: right;'>" + myArray[i] + "</td>");
-          document.write("<td style='width: 100px; text-align: right;'>" + 2*myArray[i] + "</td></tr>");
-      }
+    for (var i = 0; i < 8; i++) {
+        document.write("<tr><td style='width: 100px;'>Number " + i + " is:</td>");
+        dicearray[i] = dicearray[i].toFixed(3);
+        document.write("<td style='width: 100px; text-align: right;'>" + dicearray[i] + "</td>");
+        document.write("<td style='width: 100px; text-align: right;'>" + 2*dicearray[i] + "</td></tr>");
+    }
 
        //-->
   </script>
