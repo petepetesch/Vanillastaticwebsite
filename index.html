@@ -83,13 +83,13 @@
                           //generate a new random number
                           
                           randnumbervar = 10* Math.random();
-                          randnumbervar = (Math.floor(randnumbervar)%6)+1;
+                          randnumbervar = (Math.floor(randnumbervar)%9)+1;
                                   }
 
 
     
 
-    for (var i = 0; i < 8; i++) {
+    for (var i = 0; i < rollnumber; i++) {
         document.write("<tr><td style='width: 100px;'>Number " + i + " is:</td>");
         dicearray[i] = dicearray[i].toFixed(3);
         document.write("<td style='width: 100px; text-align: right;'>" + dicearray[i] + "</td>");
