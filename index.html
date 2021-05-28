@@ -27,7 +27,7 @@
      <tr><td style='width: 100px;'>Number 7 is:</td><td style='width: 100px; text-align: right;'>88888.000</td><td style='width: 100px; text-align: right;'>88888.000</td></tr>
  </table>
 
- <h2>Dynamic Table of Numbers</h2>
+ <h2>JavaScript array to html Table of Numbers</h2>
 
  <table border="0">
      <script language="javascript" type="text/javascript">
@@ -60,7 +60,7 @@
      </script>
  </table>
 
- <h2>Make a table based on JSON data.</h2>
+ <h2>Make a table based on dynamic array data.</h2>
 
  
  <table border="0">
@@ -99,6 +99,22 @@
        //-->
   </script>
 </table>
+<h2>Make a table based on JSON data.</h2>
+  <p id="demo2"></p>
+
+<script>
+var JSONobjvar;
+JSONobjvar = JSON.parse('{ "search.score" : 20.792477, "FeatureID" : "MFR-M365-5161",   "ProductArea": "Networking" ,    "ProductSubArea": "Virtual Network",  "FeatureTitle": "Move/re-map a VM to a different VNet in the same subscription" }');
+console.log("JSON string is : ");
+textis = ("some string "); // Json.stringify(JSONobjvar);
+console.log(textis);
+console.log("JSON object stringified is :");
+console.log(JSON.stringify(JSONobjvar));
+console.log("JSON object is :");
+console.log(JSONobjvar);
+</script>
+
+
  <h2>Make another table based on JSON data.</h2>
   <p id="demo"></p>
 
@@ -107,9 +123,9 @@ var obj, dbParam, xmlhttp, myObj, x, txt = "";
 obj = JSON.parse('{ "name":"John", "age":30, "city":"New York"}');
 obj = { table: "customers", limit: 20 };
 dbParam = JSON.stringify(obj);
-xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function() {
-  if (this.readyState == 4 && this.status == 200) {
+//xmlhttp = new XMLHttpRequest();
+//xmlhttp.onreadystatechange = function() {
+ /*  if (this.readyState == 4 && this.status == 200) {
     myObj = JSON.parse(this.responseText);
     txt += "<table border='1'>"
     for (x in myObj) {
@@ -121,7 +137,7 @@ xmlhttp.onreadystatechange = function() {
 };
 xmlhttp.open("POST", "json_demo_html_table.php", true);
 xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-xmlhttp.send("x=" + dbParam);
+xmlhttp.send("x=" + dbParam); */
 </script>
   </main>
 </body>
