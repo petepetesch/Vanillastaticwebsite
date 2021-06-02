@@ -1,42 +1,14 @@
-<!DOCTYPE html>
-<html>
-   
-<head>
-    <title>Convert JSON Data to HTML Table</title>
-    <style>
-        th, td, p, input, h3 {
-            font:15px 'Segoe UI';
-        }
-        table, th, td {
-            border: solid 1px #ddd;
-            border-collapse: collapse;
-            padding: 2px 3px;
-            text-align: center;
-        }
-        th {
-            font-weight:bold;
-        }
-    </style>
-</head>
-<body>
-	<h3>
-    	Click the button to create a dynamic table using data extracted from a JSON array.
-    </h3>
-    <input type='button' onclick='tableFromJson()' 
-    	value='Create Table from JSON data' />
-        
-    <p id='showData'></p>
-    
-    <p id='msg'></p>
-</body>
-
-<script>
 	// scroll down for ES6 features. 
     // code from here - https://www.encodedna.com/javascript/practice-ground/default.htm?pg=convert_json_to_table_javascript 
 	// using regular methods.
 
+  
+
+
     function tableFromJson() {
 		// the json data. (you can change the values for output.)
+        console.log("got to Table from JSON function...")
+        ACSSearchquery();
         var UVOCJSON = [
         {
     "@search.score": 20.792477,
@@ -155,6 +127,21 @@
         document.getElementById('msg').innerHTML = '<br />You can later <a href="https://www.encodedna.com/javascript/dynamically-add-remove-rows-to-html-table-using-javascript-and-save-data.htm" target="_blank" style="color:#1464f4;text-decoration:none;">get all the data from table and save it in a database.</a>';
     }
     
+
+    function ACSSearchquery() {
+        const { SearchClient, AzureKeyCredential };
+        
+        const client = new SearchClient(
+          "uvocsearch",
+          "uvocproduction-index",
+          new AzureKeyCredential("8B82C06FC14EDEA79EF53E575ADD97B3>")
+        );
+        console.log("Got to ACSSearchquery")
+        
+        const result = client.getDocument("move VM across VNET");
+        console.log(result);
+        
+    }
     
     // using ES6 features.
     
@@ -211,5 +198,3 @@
 //         divShowData.innerHTML = "";
 //         divShowData.appendChild(table);
 //     }
-</script>
-</html>
