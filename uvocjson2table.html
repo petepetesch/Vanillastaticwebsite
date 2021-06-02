@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+    <title>Convert JSON Data to HTML Table</title>
+    <style>
+        th, td, p, input, h3 {
+            font:15px 'Segoe UI';
+        }
+        table, th, td {
+            border: solid 1px #ddd;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+        th {
+            font-weight:bold;
+        }
+    </style>
+</head>
+<script src="uvocjson.js"></script>
+<body>
+	<h3>
+    	Click the button to create a dynamic table using data extracted from a JSON array.
+    </h3>
+    <input type='button' onclick='tableFromJson()' 
+    	value='Create Table from JSON data' />
+        
+    <p id='showData'></p>
+    
+    <p id='msg'></p>
+</body>
+
+
+</html>
