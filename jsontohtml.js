@@ -1,6 +1,5 @@
     
-    src="jquery-3.5.1.min.js"
-
+    src="http://code.jquery.com/jquery-1.7.1.min.js">
     function CreateTableFromJSON() {
         var myBooks = [
             {
