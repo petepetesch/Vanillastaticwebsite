@@ -1,3 +1,6 @@
+    
+    src="jquery-3.5.1.min.js"
+
     function CreateTableFromJSON() {
         var myBooks = [
             {
@@ -19,6 +22,15 @@
                 "Price": "210.40"
             }
         ]
+        var uvocResultsJSON =[]
+        // $.getJSON('http://query.yahooapis.com/v1/public/yql?q=select%20%2a%20from%20yahoo.finance.quotes%20WHERE%20symbol%3D%27WRC%27&format=json&diagnostics=true&env=store://datatables.org/alltableswithkeys&callback', function(data) {
+    // JSON result in `data` variable
+    // });
+
+   // uvocResultsJSON = $.getJSON(uvocResultsJSON.JSON, function(data) {});
+    uvocResultsJSON = $.ajax({datatype: 'json', url: uvocResults.json, data: data, success: success});
+
+
 
         // EXTRACT VALUE FOR HTML HEADER. 
         // ('Book ID', 'Book Name', 'Category' and 'Price')
