@@ -117,3 +117,11 @@ function tableFromJson() {
     
     document.getElementById('msg').innerHTML = '<br />You can later <a href="https://www.encodedna.com/javascript/dynamically-add-remove-rows-to-html-table-using-javascript-and-save-data.htm" target="_blank" style="color:#1464f4;text-decoration:none;">get all the data from table and save it in a database.</a>';
 }
+
+function testdownload() {
+
+    // src="https://cdn.rawgit.com/abdennour/react-csv/6424b500/cdn/react-csv-latest.min.js" type="text/javascript">
+
+    console.log("Got to test download");
+    alert("got to testdownload function");
+}

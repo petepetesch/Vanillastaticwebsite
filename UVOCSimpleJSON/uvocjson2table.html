@@ -18,14 +18,21 @@
         }
     </style>
 </head>
-<script src="uvocjson.js"></script>
+<script src="uvocjson2table.js"></script>
 <body>
 	<h3>
     	Click the button to create a dynamic table using data extracted from a JSON array.
     </h3>
     <input type='button' onclick='tableFromJson()' 
     	value='Create Table from JSON data' />
-        
+    <h3>
+        Click the button to DOWNLOAD JSON to CSV file.
+    </h3>
+
+   
+
+    <input type='button' onclick='testdownload()' 
+    	value='Download CSV file' />    
     <p id='showData'></p>
     
     <p id='msg'></p>

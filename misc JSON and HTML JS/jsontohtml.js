@@ -1,5 +1,5 @@
     
-    src="http://code.jquery.com/jquery-1.7.1.min.js">
+   
     function CreateTableFromJSON() {
         var myBooks = [
             {
@@ -27,7 +27,7 @@
     // });
 
    // uvocResultsJSON = $.getJSON(uvocResultsJSON.JSON, function(data) {});
-    uvocResultsJSON = $.ajax({datatype: 'json', url: uvocResults.json, data: data, success: success});
+    // uvocResultsJSON = $.ajax({datatype: 'json', url: uvocResults.json, data: data, success: success});
 
 
 
